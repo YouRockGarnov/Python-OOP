@@ -1,4 +1,3 @@
-from ast import main
 import logging
 
 # Настройка логирования
