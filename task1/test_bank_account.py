@@ -1,5 +1,5 @@
 import pytest
-from solution import BankAccount
+from bank_account import BankAccount
 
 
 # Фикстура для создания экземпляра класса BankAccount для каждого теста
