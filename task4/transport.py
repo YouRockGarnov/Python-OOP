@@ -12,27 +12,15 @@ class Vehicle(ABC):
 
 
 class Car(Vehicle):
-    def start(self) -> str:
-        return "Car engine started"
-
-    def stop(self) -> str:
-        return "Car engine stopped"
+    pass  # implement me!
 
 
 class Motorcycle(Vehicle):
-    def start(self) -> str:
-        raise NotImplementedError('Implement me!')
-
-    def stop(self) -> str:
-        raise NotImplementedError('Implement me!')
+    pass  # implement me!
 
 
 class Bicycle(Vehicle):
-    def start(self) -> str:
-        raise NotImplementedError('Implement me!')
-
-    def stop(self) -> str:
-        raise NotImplementedError('Implement me!')
+    pass  # implement me!
 
 
 def operate_vehicle(vehicle: Vehicle) -> str:
