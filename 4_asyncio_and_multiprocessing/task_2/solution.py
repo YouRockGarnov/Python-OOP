@@ -1,12 +1,8 @@
 import asyncio
 
 
-async def factorial(n):
-    if n == 0:
-        return 1
-    else:
-        return n * await factorial(n-1)
-
-
-def main(n):
-    return asyncio.run(factorial(n))
+async def async_counter(start):
+    while start >= 0:
+        print(start)
+        await asyncio.sleep(1)
+        start -= 1
