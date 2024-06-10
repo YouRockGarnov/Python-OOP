@@ -14,6 +14,8 @@ def test_cache():
 
     cache.invalidate(slow_function)
     assert len(cache.data) == 1
+    cache.invalidate(MyClass.method)
+    assert len(cache.data) == 0
 
 
 @pytest.mark.asyncio
